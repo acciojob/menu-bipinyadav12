@@ -93,12 +93,12 @@ function App() {
         <button data-test-id="menu-item-all"id ="filter-btn-0" onClick={()=>onFilter("all")}>All</button>
         <button data-test-id="menu-item-breakfast" id ="filter-btn-1" onClick={()=>onFilter("breakfast")}>Breakfast</button>
         <button data-test-id="menu-item-lunch" id ="filter-btn-2" onClick={()=>onFilter("lunch")}>Lunch</button>
-        <button data-test-id="menu-item-shakes" id ="filter-btn-3" onClick={()=>onFilter("shakes")}>Shkes</button>
+        <button data-test-id="menu-item-shakes" id ="filter-btn-3" onClick={()=>onFilter("shakes")}>Shakes</button>
       </div>
 
       <div>
         {list.map((i) => (
-          <div key={i.id}>
+          <div key={i.id} data-test-id={`menu-etem-${i.category}`}>
             <div>
               <img src={i.img} alt={i.title} />
             </div>
