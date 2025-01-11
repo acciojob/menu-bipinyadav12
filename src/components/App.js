@@ -82,7 +82,7 @@ function App() {
   const filteredList = filter === "all" ? DATA : DATA.filter((item) => item.category === filter);
 
   return (
-    <div className="app">
+    <div className="app" id="main">
       <header>
         <h1>Our Menu</h1>
       </header>
@@ -103,7 +103,7 @@ function App() {
       {/* Menu Items */}
       <div className="menu">
         {filteredList.map((item) => (
-          <div key={item.id} className="menu-item" data-test-id={`menu-item-${item.id}`}>
+          <div key={item.id} className="menu-item" data-test-id={`menu-item-${item.category}`}>
             <div className="menu-img">
               <img src={item.img} alt={item.title} />
             </div>
