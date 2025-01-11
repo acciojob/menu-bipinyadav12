@@ -90,10 +90,10 @@ function App() {
         <h1>Our Menu</h1>
       </div>
       <div>
-        <button data-test-id="menu-item-all"id ="filter-btn-0" onClick={()=>onFilter("all")}>All</button>
-        <button data-test-id="menu-item-breakfast" id ="filter-btn-1" onClick={()=>onFilter("breakfast")}>Breakfast</button>
-        <button data-test-id="menu-item-lunch" id ="filter-btn-2" onClick={()=>onFilter("lunch")}>Lunch</button>
-        <button data-test-id="menu-item-shakes" id ="filter-btn-3" onClick={()=>onFilter("shakes")}>Shakes</button>
+        <button id ="filter-btn-0" onClick={()=>onFilter("all")}>All</button>
+        <button id ="filter-btn-1" onClick={()=>onFilter("breakfast")}>Breakfast</button>
+        <button  id ="filter-btn-2" onClick={()=>onFilter("lunch")}>Lunch</button>
+        <button  id ="filter-btn-3" onClick={()=>onFilter("shakes")}>Shakes</button>
       </div>
 
       <div>
